@@ -1,0 +1,116 @@
+\begin{tikzpicture}
+
+\fill[color=blue,opacity=0.5]  (-4.5,3) rectangle (-2.5,1);
+\fill[color=red,opacity=0.5]  (-1.5,3) rectangle (0.5,1);
+\fill[color=green,opacity=0.5]  (1.5,3) rectangle (3.5,1);
+\fill[color=blue,opacity=0.5]  (9,3) rectangle (11,1);
+\fill[color=red,opacity=0.5]  (13,3) rectangle (15,1);
+\fill[color=green,opacity=0.5]  (17,3) rectangle (19,1);
+\node at (10,2) {};
+\node at (14,2) {};
+\node at (18,2) {};
+\node at (-3.5,2) {};
+\node at (-0.5,2) {};
+\node at (2.5,2) {};
+\draw  (-2.5,-1) rectangle (-0.5,-3);
+
+\draw  (11,-1) rectangle (13,-3);
+\draw  (15,-1) rectangle (17,-3);
+\draw  (-0.5,-5) rectangle (1.5,-7);
+\draw  (13,-5) rectangle (15,-7);
+
+
+\node (v1) at (-3.5,4) {};
+\node (v2) at (-3.5,3) {};
+\node (v28) at (-0.5,4.5) {};
+\node (v29) at (-0.5,3) {};
+\node (v3) at (2.5,4) {};
+\node (v4) at (2.5,3) {};
+\node at (18,4) {};
+\node at (18,3) {};
+\node (v5) at (-3.5,1) {};
+\node (v13) at (-0.5,1) {};
+\node (v12) at (2.5,1) {};
+\node at (18,1) {};
+\node at (18,0) {};
+\node (v14) at (18,4) {};
+\node (v15) at (18,3) {};
+\node (v16) at (18,1) {};
+\node (v17) at (18,0) {};
+\node (v6) at (-1.5,-1) {};
+\node at (4.5,2.5) {};
+\node (v9) at (-1.5,-3) {};
+\node (v7) at (2.5,-3) {};
+\node (v8) at (0.5,-5) {};
+
+
+
+\node (v24) at (14,-4) {};
+\node (v19) at (14,-8) {};
+\node (v20) at (16,-8) {};
+\node (v23) at (14,-8) {\huge $B=a_b$};
+
+\node (v21) at (16,-9) {};
+\node (v18) at (14,-7) {};
+\node (v25) at (14,-5) {};
+\draw [-triangle 90, line width=2pt] (v1) edge (v2);
+\draw[-triangle 90, line width=2pt]  (v3) edge (v4);
+\draw [-triangle 90, line width=2pt] (v5) edge (v6);
+\draw [-triangle 90, line width=2pt] (v7) edge (v8);
+\draw[-triangle 90, line width=2pt]  (v9) edge (v8);
+
+
+\draw[-triangle 90, line width=2pt]  (v13) edge (v6);
+\draw[-triangle 90, line width=2pt]  (v14) edge (v15);
+\draw[-triangle 90, line width=2pt]  (v16) edge (v17);
+\draw[-triangle 90, line width=2pt]  (v18) edge (v19);
+
+
+\draw[-triangle 90, line width=2pt]  (v24) edge (v25);
+\node at (-3.5,2) {\large $(2^4-1)$};
+\node at (-3.5,1.5) {\tiny\bf{RACBOX($1$)}};
+\node at (-0.5,2) {\large $(2^3-1)$};
+\node at (-0.5,1.5) {\tiny\bf{RACBOX($2$)}};
+\node at (2.5,2) {\large $(2^2-1)$};
+\node at (2.5,1.5) {\tiny\bf{RACBOX($3$)}};
+
+
+
+\node at (10,2) {{\large $(2^4-1)$}};
+\node at (10,1.5) {\tiny\bf{RACBOX($1$)}};
+\node at (14,2) {{\large $(2^3-1)$};};
+\node at (14,1.5) {\tiny\bf{RACBOX($2$)}};
+\node at (18,2) {\large $(2^2-1)$};
+\node at (18,1.5) {\tiny\bf{RACBOX($3$)}};
+
+
+;
+\node (v26) at (0.5,-7) {};
+\node (v27) at (0.5,-8) {};
+\draw[-triangle 90, line width=2pt]  (v26) edge (v27);
+\draw[-triangle 90, line width=2pt]  (v27) edge (v23);
+\draw[-triangle 90, line width=2pt]  (v28) edge (v29);
+\node at (-3.5,4) {\huge $a_0,a_1,..a_{15}$};
+\node at (-0.5,4.5) {\huge $a_{16},a_{17},..a_{23}$};
+\node at (2.5,4) {\huge $a_{24},a_{25},a_{26},a_{27}$};
+\node (v10) at (5.5,2) {\huge $a_{28}$};
+
+\node at (0,5.5) {\Huge \bf{Alice}};
+\node at (13.5,5.5) {\Huge \bf{Bob}};
+\draw  (1.5,-1) rectangle (3.5,-3);
+\node (v11) at (2.5,-1) {};
+\draw[-triangle 90, line width=2pt]  (v10) edge (v11);
+\draw[-triangle 90, line width=2pt]  (v12) edge (v11);
+\node (v30) at (16,0) {};
+\node (v31) at (16,-1) {};
+\node (v32) at (16,-3) {};
+\node (v33) at (16,-4) {};
+\draw[-triangle 90, line width=2pt]  (v30) edge (v31);
+\draw[-triangle 90, line width=2pt]  (v32) edge (v33);
+\node at (-1.5,-2) {\Huge \bf{26}};
+\node at (2.5,-2) {\Huge \bf{27}};
+\node at (0.5,-6) {\Huge \bf{28}};
+\node at (12,-2) {\Huge \bf{26}};
+\node at (16,-2) {\Huge \bf{27}};
+\node at (14,-6) {\Huge \bf{28}};
+\end{tikzpicture}

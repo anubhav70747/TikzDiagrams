@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+
+\draw[fill,blue,opacity=0.5]  (0,0) node (v1) {} circle (0.75);
+\draw[fill,red,opacity=0.5]  (4,3) node (v2) {} circle (0.75);
+\draw[fill,green,opacity=0.5]  (4,1) node (v3) {} circle (0.75);
+\draw[fill,yellow,opacity=0.5]  (4,-1) node (v4) {} circle (0.75);
+\draw[fill,pink,opacity=0.5]  (4,-3) node (v5) {} circle (0.75);
+
+
+\draw[fill,blue,opacity=0.5]  (10,0) node (v6) {} circle (0.75);
+\draw[fill,red,opacity=0.5]  (6,3) node (v7) {} circle (0.75);
+\draw[fill,red,opacity=0.5]  (6,1) node (v8) {} circle (0.75);
+\draw[fill,red,opacity=0.5]  (6,-1) node (v9) {} circle (0.75);
+\draw[fill,red,opacity=0.5]  (6,-3) node (v10) {} circle (0.75);
+\node at (0,0) {\huge \bf $S_n$};
+\node at (4,3) {\huge \bf ${S_k^1}$};
+\node at (4,1) {\huge \bf ${S_k^1}^{'}	$};
+\node at (4,-1) {\huge \bf $S_k^2$};
+\node at (4,-3) {\huge \bf ${S_k^2}^{'}$};
+\node at (6,3) {\huge \bf ${S_k^1}$};
+\node at (6,1) {\huge \bf ${S_k^1}$};
+\node at (6,-1) {\huge \bf ${S_k^1}$};
+\node at (6,-3) {\huge \bf ${S_k^1}$};
+\node at (10,0) {\huge \bf ${S_k^1}$};
+\draw[-triangle 60, -triangle 90]  (v1) edge node [sloped,above] {$A_n^k=0$,$B_n^k=0$}(v2);
+\draw[-triangle 60, -triangle 90]  (v1) edge node [sloped,above] {$A_n^k=0$,$B_n^k=1$}(v3);
+\draw[-triangle 60, -triangle 90]  (v1) edge node [sloped,above] {$A_n^k=1$,$B_n^k=0$}(v4);
+\draw[-triangle 60, -triangle 90]  (v1) edge node [sloped,above] {$A_n^k=1$,$B_n^k=1$}(v5);
+\draw [-triangle 60, -triangle 90] (v6) edge node [sloped,above] {$A_n^k=0$,$B_n^k=0$}(v7);
+\draw [-triangle 60, -triangle 90] (v6) edge node [sloped,above] {$A_n^k=0$,$B_n^k=0$}(v8);
+\draw [-triangle 60, -triangle 90] (v6) edge node [sloped,above] {$A_n^k=0$,$B_n^k=0$}(v9);
+\draw [-triangle 60, -triangle 90] (v6) edge node [sloped,above] {$A_n^k=0$,$B_n^k=0$}(v10);
+\node at (5,5) {\Huge $S_n$ vs. $S_k$};
+\end{tikzpicture}
