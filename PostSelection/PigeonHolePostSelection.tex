@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+
+
+\draw[line width=1pt]  (-2.5,3.5) rectangle (-0.5,1.5);
+\draw[line width=1pt] (1.5,3.5) rectangle (3.5,1.5);
+\draw[line width=1pt]  (-0.5,7.5) rectangle (1.5,5.5);
+\draw[line width=1pt]  (-2.5,-0.5) rectangle (-0.5,-2.5);
+\node at (0.5,6.5) {\huge $P_{WN}$};
+\node at (-1.5,2.5) {\Large $P_{f_2-BOX}$};
+\node at (2.5,2.5) {\Large $P_{f_1-BOX}$};
+\node at (-1.5,-1.5) { $P_{f_{final}-BOX}$};
+
+\node (v1) at (0.5,5.5) {};
+\node (v2) at (-1.5,3.5) {};
+\node (v5) at (2.5,3.5) {};
+\node (v3) at (-1.5,1.5) {};
+\node (v6) at (2.5,1.5) {};
+\node (v4) at (-1.5,-0.5) {};
+\draw[-triangle 90,line width=2pt]  (v1) edge node[sloped,below] () {\bf PSD($f_1$)} (v2);
+\draw[-triangle 90,line width=2pt]  (v3) edge node[sloped,below] () {\bf PSD($f_{final}$)} (v4);
+\draw[-triangle 90,line width=2pt]  (v1) edge node[sloped,below] () {\bf PSD($f_2$)} (v5);
+\draw[-triangle 90,line width=2pt]  (v6) edge node[sloped,below] () {\bf PSD($f_{final}$)} (2.5,-0.4);
+\node [cross out,ultra thick,scale=5 ,draw=red] at (2.5,-1.5) {};
+
+\end{tikzpicture}

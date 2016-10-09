@@ -1,0 +1,33 @@
+
+
+\usetikzlibrary{arrows}
+\begin{tikzpicture}
+
+\draw  (-4,2.5) rectangle (-2,-0.5);
+\draw  (0,2.5) rectangle (2,-0.5);
+\node at (-3,1) {\Large OVEN};
+\node at (1,1) {\Large Z};
+\node (v1) at (-2,1) {};
+\node (v2) at (0,1) {};
+\node (v3) at (2,2) {};
+\node (v5) at (2,0) {};
+\node (v4) at (4,2) {};
+\node (v6) at (3,0) {};
+
+\draw [thick,-latex,   ->, -triangle 90] (v1) edge (v2);
+\draw [-latex,   ->, -triangle 90] (v3) edge (v4);
+\draw [-latex,   ->, -triangle 90] (v5) edge (v6);
+\node at (3,2.5) {\Large $|+Z>$};
+\node at (3,0.5) {\Large $|-Z>$};
+\draw [o-*] (4,2.5) rectangle (6,-0.5);
+\node (v7) at (6,2) {};
+\node (v9) at (6,0) {};
+\node (v8) at (7,2) {};
+\node (v10) at (7,0) {};
+\draw [o-*, -triangle 90] (v7) edge (v8);
+\draw [o-*, -triangle 90] (v9) edge (v10);
+\node at (8,2) {\Large $|+X>$};
+\node at (8,0) {\Large $|-X>$};
+\node at (5,1) {\Large X};
+\draw [o-*, -triangle 90,fill] (3,0.15) rectangle (3.30,-.15);
+\end{tikzpicture}

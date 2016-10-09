@@ -1,0 +1,22 @@
+
+
+\usetikzlibrary{arrows}
+\begin{tikzpicture}
+
+\draw  (-4,2.5) rectangle (-2,-0.5);
+\draw  (0,2.5) rectangle (2,-0.5);
+\node at (-3,1) {\Large OVEN};
+\node at (1,1) {\Large Z};
+\node (v1) at (-2,1) {};
+\node (v2) at (0,1) {};
+\node (v3) at (2,2) {};
+\node (v5) at (2,0) {};
+\node (v4) at (3,2) {};
+\node (v6) at (3,0) {};
+
+\draw [thick,-latex,   ->, -triangle 90] (v1) edge (v2);
+\draw [-latex,   ->, -triangle 90] (v3) edge (v4);
+\draw [-latex,   ->, -triangle 90] (v5) edge (v6);
+\node at (4,2) {\Large $|+Z>$};
+\node at (4,0) {\Large $|-Z>$};
+\end{tikzpicture}
