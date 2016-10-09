@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+\draw[-triangle 90] (0,0) node (a) {} -- (8.48,0) node (b) {} -- (0,8.48) node (c) {} --(a);
+\draw[-triangle 90, line width=2pt] (a) -- node[sloped,below] {\bf $f_{B-CHSH}$} (c);
+\draw[-triangle 90, line width=2pt] (a) -- node[sloped,below] {\bf $f_{LV}$} (4.24,4.24) node (d) {};
+\draw[-triangle 90, line width=2pt] (a) -- node[sloped,below] {\bf $f_{NL-BOX}$} (2.5,6) node (e) {};
+\draw[-triangle 90, line width=2pt] (a) -- node[sloped,below] {\bf $f_{sig}$} (5.5,8.48) node (f) {};
+\draw[-triangle 90, line width=2pt] (a) -- node[sloped,below] {\bf $f_{sig1}/f_{sig2}$} (6.75,4.5) node (g) {};
+
+\draw[ball color=blue] (a) circle (.2);
+\draw[ball color=blue] (c) circle (.2);
+\draw[ball color=blue] (d) circle (.2);
+\draw[ball color=blue] (f) circle (.2);
+\draw[ball color=blue] (e) circle (.2);
+\draw[ball color=blue] (g) circle (.2);
+
+\draw (a) -- (4.24,0) --  (d) -- (0,4.24) -- (a); 
+
+\node[below] at (a) {\large $P_{WN}$};
+\node[above] at (c) {\large $P_{PR-BOX}$};
+\node[above] at (d) {\large $P_{LV}$};
+\node[above] at (e) {\large $P_{f_{NL}-BOX}$};
+\node[above] at (f) {\large $P_{f_{sig}-BOX}$};
+\node[below] at (g) {\large $P_{f_{sig1}-BOX}/P_{f_{sig2}-BOX}$};
+
+
+\end{tikzpicture}

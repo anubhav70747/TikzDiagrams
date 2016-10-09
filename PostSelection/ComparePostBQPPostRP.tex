@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+\draw[line width=1pt]  (0,0) node (a) {} ellipse (2 and 2);
+
+\draw[line width=1pt,color=blue] [rotate around={45:(0,0)}]  (0,0.5) ellipse (2.5 and 2.5);
+
+\draw[line width=1pt,color=red]  (1,0) ellipse (4.5 and 4);
+\draw[line width=1pt,color=blue] [rotate around={45:(0,0)}]  (-0,2) ellipse (3 and 4.5);
+\draw[line width=1pt,color=red]  (0.5,-0.5) ellipse (7.5 and 7.5);
+\node[below] at (0,0) {\Huge $P$};
+\node[below] at (-2,1.5) {\Huge \textcolor{blue} {$RP$}};
+\node[below] at (3,1) {\Huge \textcolor{red} {$BQP$}};
+\node[below] at (-3.5,3) {\Huge \textcolor{blue} {$NP$}};
+\node at (2.5,5.5) {\Huge \textcolor{red} {$PP$}};
+\node (v2) at (1,7.1) {};
+\node (v1) at (1,4) {};
+\node (v4) at (-4.7,4.7) {};
+\node (v3) at (-1.5,2.5) {};
+\draw[-triangle 90,line width=2pt] (v1) edge node[sloped,above] {\bf PostBQP=PP} (v2);
+\draw[-triangle 90,line width=2pt]  (v3) edge node[sloped,above] {\bf PostRP=NP} (v4);
+\end{tikzpicture}

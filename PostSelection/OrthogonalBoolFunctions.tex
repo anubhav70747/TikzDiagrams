@@ -1,0 +1,30 @@
+\begin{tikzpicture}
+
+\draw[line width=1pt]  (1,2.5) rectangle (3,0.5);
+\draw[line width=1pt]  (-1,-1.5) rectangle (1,-3.5);
+
+\draw[line width=1pt]  (3,-1.5) rectangle (5,-3.5);
+\node at (2,1.5) {\huge $P_{WN}$};
+\node (v3) at (2,0.5) {};
+\node (v4) at (0,-1.5) {};
+\node (v9) at (0,-3.5) {};
+\node at (4,1.5) {};
+\node (v5) at (2,0.5) {};
+\node (v6) at (4,-1.5) {};
+\node (v7) at (4,-3.5) {};
+\node (v8) at (4,-5) {};
+\node (v10) at (0,-5) {};
+\node at (0,-2.5) {\Large $P_{f-BOX}$};
+\node at (4,-2.5) {\Large $P_{f^1-BOX}$};
+\node (v1) at (1,-2.5) {};
+\node (v2) at (3,-2.5) {};
+\draw[-triangle 90,line width=2pt]  (v1) edge  (v2);
+\draw[-triangle 90,line width=2pt]  (v3) edge node[sloped,below] () {PSD($f$)} (v4);
+\draw[-triangle 90,line width=2pt]  (v5) edge node[sloped,below] () {PSD($f^1$)} (v6);
+\draw[-triangle 90,line width=2pt]  (v7) edge node[sloped, below=6] () {PSD($f$)} (v8);
+\draw[-triangle 90,line width=2pt]  (v9) edge node[sloped, below=6] () {PSD($f^1$)} (v10);
+\node [cross out,ultra thick,scale=5 ,draw=red] at (2,-2.5) {};
+\node [cross out,ultra thick,scale=5 ,draw=red] at (4,-5.75) {};
+
+\node [cross out,ultra thick,scale=5 ,draw=red] at (0,-5.75) {};
+\end{tikzpicture}
