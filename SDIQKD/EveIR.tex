@@ -12,8 +12,8 @@
 \node (v5) at (6,5) {\huge$e$};
 \node (v8) at (6,-3.5) {\huge $E=a_b$};
 \node (v19) at (-2,1.5) {};
-\draw[rounded corners,color=red,ultra thick]  (-5,3.5) rectangle (-1,-2);
-\draw[rounded corners,color=green,ultra thick]  (4,3.5) rectangle (8,-2);
+\draw[rounded corners,color=red,line width=6pt]  (-5,3.5) rectangle (-1,-2);
+\draw[rounded corners,color=green,line width=6pt]  (4,3.5) rectangle (8,-2);
 \coordinate (v2) at (-3.5,2.5) {};
 \coordinate (v4) at (-2.5,2.5) {};
 \draw [o-*, -triangle 60] (v1) edge (v2);
@@ -31,14 +31,14 @@
 \node (v14) at (-3,-3.5) {\huge $a_b$};
 \coordinate (v18) at (16.5,-1) {};
 
-\draw (v9) -- (v10) -- (v11) -- (v12) -- (v13);
-\draw (v15) -- (v16) -- (v17) -- (v12);
+\draw [-triangle 60] (v15) -- (v16) -- (v17) -- (v12);
+\draw [-triangle 60] (v9) -- (v10) -- (v11) -- (v12);
 \draw [-triangle 60] (v13) edge  (v14);
 \node (v20) at (5,1.5) {};
 \draw [-triangle 60,line width=4pt] (v19) edge node[above]{\huge $\rho_{a_0,a_1,e}\in \mathcal{H}_2$} (v20);
 \node at (-3,6.5) {\Huge \bf Alice};
 \node at (6,6.5) {\Huge \bf Eve};
-\draw[rounded corners,color=blue,ultra thick]  (13,3.5) rectangle (17,-2);
+\draw[rounded corners,color=blue,line width=6pt]  (13,3.5) rectangle (17,-2);
 \coordinate (v21) at (6,3) {};
 \coordinate (v22) at (-3,3) {};
 \coordinate (v23) at (-3,2.5) {};
