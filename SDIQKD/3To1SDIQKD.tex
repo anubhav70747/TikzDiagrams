@@ -34,7 +34,7 @@
 \draw [-triangle 60] (v9) -- (v10) -- (v11) -- (v12);
 \draw [-triangle 60] (v13) edge  (v14);
 \node (v20) at (5,1.5) {};
-\draw [-triangle 60,line width=4pt] (v19) edge node[above]{\huge $\rho_{a_0,a_1,a_2}\in \mathcal{H}_2$} (v20);
+\draw [-triangle 60,line width=4pt] (v19) edge node[above]{\LARGE $\rho_{a_0,a_1,a_2}\in \mathcal{P}(\mathbb{C}^d)$} (v20);
 \node at (-3,6.5) {\Huge \bf Alice};
 \node at (6,6.5) {\Huge \bf Bob};
 \node (v21) at (-3,5) {\huge $a_1$};
@@ -47,6 +47,7 @@
 \draw [-triangle 60] (v23) -- (v24) -- (v25) -- (v26) -- (-3,-1);
 \coordinate (v27) at (6,3) {};
 \coordinate (v28) at (7.5,3) {};
+\fill[ color=red ] (v12) circle (7pt);
 
 \node at (6,1.5) {\huge $\{M_B^b\}$};
 \draw [-triangle 60](v27) -- (v28) -- (v18) -- (v12);
