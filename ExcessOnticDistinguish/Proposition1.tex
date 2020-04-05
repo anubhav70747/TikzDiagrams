@@ -1,0 +1,107 @@
+\documentclass[crop,tikz]{standalone}
+\usetikzlibrary{arrows.meta}
+\tikzstyle{myarrows}=[line width=1mm,draw=blue,-triangle 45,postaction={draw, line width=3mm, shorten >=4mm, -}]
+\begin{document}
+
+\begin{tikzpicture}[line cap=round, line join=round, >=Triangle]
+
+\begin{scope}[ shift={(0,0)}]
+\draw  (0,0) ellipse (3 and 3);
+
+
+\draw[->]  (0,0) -- (0,3);
+\draw (0,3.4) node {\Large $\rho_1$};
+\draw [shift={(0,0)},lightgray, fill, fill opacity=0.5] (0,0) -- (90:0.65) arc (90:-30:0.65) -- cycle;
+\node at (0.9,0.4) {\large $\frac{2\pi}{3}$};
+
+\begin{scope}[rotate=120]
+    \draw[->]  (0,0) -- (0,3);
+	\draw (0,3.4) node {\Large $\rho_3$};
+	
+\draw [shift={(0,0)}, fill] (0,0) -- (90:0.5) arc (90:-30:0.5) -- cycle;
+\node at (0.85,0.35) {\large $\frac{2\pi}{3}$};
+\end{scope}
+
+\begin{scope}[rotate=240]    
+	\draw[->]  (0,0)  -- (0,3);
+	\draw (0,3.4) node {\Large $\rho_2$};
+\end{scope}
+\node at (0,-3.5) {\huge $\{\rho_x\}$ };
+\end{scope}
+
+
+\begin{scope}[ shift={(-5,-7)}]
+\draw  (0,0) ellipse (3 and 3);
+
+
+\draw[->,ultra thick, gray]  (0,0) -- (0,2);
+\draw[->,dashed]  (0,0) -- (0,3);
+\draw (0,2.3) node {\Large $M_{1}$};
+\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.5] (0,0) -- (90:0.65) arc (90:-30:0.65) -- cycle;
+\node at (0.9,0.4) {\large $\frac{2\pi}{3}$};
+
+\begin{scope}[rotate=120]
+\draw[->,dashed]  (0,0) -- (0,3);
+   \draw[->,ultra thick,gray]  (0,0) -- (0,2);
+\draw (0,2.3) node {\Large $M_{3}$};
+	
+\draw [shift={(0,0)}, fill] (0,0) -- (90:0.5) arc (90:-30:0.5) -- cycle;\node at (0.85,0.35) {\large $\frac{2\pi}{3}$};
+\end{scope}
+
+\begin{scope}[rotate=240]    
+\draw[->,dashed]  (0,0) -- (0,3);
+	\draw[->,ultra thick,gray]  (0,0) -- (0,2);
+\draw (0,2.3) node {\Large $M_{2}$};
+\end{scope}
+\node at (0,-3.5) {\huge $\{M_k\}$ };
+\end{scope}
+
+
+\begin{scope}[ shift={(5,-7)},rotate=30]
+\draw  (0,0) ellipse (3 and 3);
+
+
+\draw[->,color=blue]  (0,0) -- (0,3);
+\draw[->,dashed,rotate=-30]  (0,0) -- (0,3);
+\draw[->,color=blue]  (0,0) -- (0,-3);
+\draw (0,3.6) node {\Large $M^{1,2}_1$};
+\draw (0,-3.6) node {\Large $M^{1,2}_2$};
+\draw [shift={(0,0)}, fill] (0,0) -- (90:0.65) arc (90:60:0.65) -- cycle;
+\node at (0.6,0.6) {\large $\frac{\pi}{6}$};
+\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.5] (0,0) -- (60:0.5) arc (60:30:0.5) -- cycle;
+\node at (0.25,1) {\large $\frac{\pi}{6}$};
+
+
+\begin{scope}[rotate=120]
+\draw[->,dashed,rotate=-30]  (0,0) -- (0,3);
+    \draw[->,color=red]  (0,0) -- (0,3);
+    \draw[->,color=red]  (0,0) -- (0,-3);
+	\draw (0,3.6) node {\Large $M^{3,1}_3$};
+	\draw (0,-3.6) node {\Large  $M^{3,1}_1$};
+	\draw [shift={(0,0)}, fill] (0,0) -- (90:0.65) arc (90:60:0.65) -- cycle;
+\node at (0.6,0.6) {\large $\frac{\pi}{6}$};
+\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.5] (0,0) -- (60:0.5) arc (60:30:0.5) -- cycle;
+\node at (0.25,1) {\large $\frac{\pi}{6}$};
+
+\end{scope}
+
+\begin{scope}[rotate=240]    
+\draw[->,dashed,rotate=-30]  (0,0) -- (0,3);
+	 \draw[->,color=green]  (0,0) -- (0,3);
+    \draw[->,color=green]  (0,0) -- (0,-3);
+	\draw (0,3.6) node {\Large $M^{2,3}_2$};
+	\draw (0,-3.6) node {\Large $M^{2,3}_3$};
+	\draw [shift={(0,0)}, fill] (0,0) -- (90:0.65) arc (90:60:0.65) -- cycle;
+\node at (0.6,0.6) {\large $\frac{\pi}{6}$};
+\draw [shift={(0,0)}, lightgray, fill, fill opacity=0.5] (0,0) -- (60:0.5) arc (60:30:0.5) -- cycle;
+\node at (0.25,1) {\large $\frac{\pi}{6}$};
+;
+\end{scope}
+
+\end{scope}
+
+\node at (5,-11) {\huge {\color{blue} $\{M^{1,2}_k\}$},{\color{green} $\{M^{2,3}_k\}$},{\color{red} $\{M^{3,1}_k\}$}};
+
+\end{tikzpicture}
+
+\end{document}
